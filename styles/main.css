@@ -18,5 +18,37 @@ body {
   background-image: url("/images/bg-pattern.svg");
   background-repeat: no-repeat;
   background-position: top left;
+  padding: 4rem 1rem 0 1rem;
+}
+
+h1 {
+  color: #293356;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+p {
+  color: #858fad;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.header {
+  text-align: center;
+  background-image: url("/images/pattern-circles.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  padding: 2rem 0;
+}
+
+.header p {
+  width: 65%;
+  margin: 0 auto;
+  max-width: 28.125rem;
+}
+
+.header h1 {
+  margin-bottom: .75rem;
 }
 /*# sourceMappingURL=main.css.map */

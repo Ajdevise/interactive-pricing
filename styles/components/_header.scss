@@ -1,0 +1,18 @@
+.header{
+    text-align: center;
+    background-image: url("/images/pattern-circles.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    padding: 2rem 0;
+
+    p{
+        width: 65%;
+        margin: 0 auto;
+        max-width: 28.125rem;
+    }
+
+    h1{
+        margin-bottom: .75rem;
+    }
+}
