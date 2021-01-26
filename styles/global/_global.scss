@@ -1,0 +1,20 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Manrope, sans-serif;
+}
+
+body{
+    font-size: 15px;
+    min-height: 100vh;
+    background-color: $very-pale-blue;
+    background-image: url("/images/bg-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
