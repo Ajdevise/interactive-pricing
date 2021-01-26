@@ -19,3 +19,9 @@ body{
     background-position: top left;
     padding: 4rem 1rem 0 1rem;
 }
+
+.sr-only{
+    position: absolute;
+    left: -99999rem;
+    opacity: 0;
+}

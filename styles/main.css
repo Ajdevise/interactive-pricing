@@ -21,6 +21,12 @@ body {
   padding: 4rem 1rem 0 1rem;
 }
 
+.sr-only {
+  position: absolute;
+  left: -99999rem;
+  opacity: 0;
+}
+
 h1 {
   color: #293356;
   font-size: 1.3rem;
@@ -50,5 +56,20 @@ p {
 
 .header h1 {
   margin-bottom: .75rem;
+}
+
+.pricing {
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.pricing__views {
+  text-transform: uppercase;
+  color: #858fad;
+  font-weight: 600;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=main.css.map */
