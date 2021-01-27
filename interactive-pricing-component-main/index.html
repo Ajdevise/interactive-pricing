@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet"> 
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles/main.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+
+    <header class="header">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </header>
+    
+    <section class="pricing">
+      <h2 class="sr-only">Pricing details</h2>
+      <form action="#" class="pricing__form">
+        <strong class="pricing__views"><span id="views">245</span>k pageviews</strong>
+        <div class="pricing__group">
+          <label for="pageViews" class="sr-only">Configure page views (price will be updated with views)</label>
+          <div id="fakeRange" class="fakeRange" aria-hidden="true">
+            <span id="fill" class="fakeRange__fill"></span>
+            <span id="thumb" class="fakeRange__thumb"></span>
+          </div>
+          <input type="range" min="1" max="100" step="1" value="50" id="pageViews" name="pageViews" class="range sr-only">
+        </div>
+        <strong class="pricing__amount">$<span id="money">100.00</span> <span id="billing-type">/ month</span></strong>
+        <div class="slider">
+          <label for="monthly">Monthly Billing</label>
+          <input id="monthly" type="radio" value="monthly billing" name="billing-variant" class="sr-only" checked>
+          <div class="slider__toggle" aria-hidden="true"></div>
+          <input id="yearly" type="radio" value="yearly billing" name="billing-variant" class="sr-only">
+          <label for="yearly">Yearly Billing</label>
+          <div class="slider__discount">-25% <span class="hide-for-mobile">discount</span></div>
+        </div>
+        <hr>
+        <ul class="pricing__benefits">
+          <li>
+            <img src="/images/icon-check.svg" alt="icon checked">
+            Unlimited websites
+          </li>
+          <li>
+            <img src="/images/icon-check.svg" alt="icon checked">
+            100% data ownership
+          </li>
+          <li>
+            <img src="/images/icon-check.svg" alt="icon checked">
+            Email reports
+          </li>
+        </ul>
+        <button class="cta">
+          <span>Start my trial</span>
+        </button>
+      </form>
+    </section>
+
+    <script src="/script/togglePrice.js"></script>
+    <script src="/script/range.js"></script>
+</body>
+</html>

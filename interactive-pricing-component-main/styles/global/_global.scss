@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Manrope, sans-serif;
+}
+
+body{
+    font-size: 15px;
+    min-height: 100vh;
+    background-color: $very-pale-blue;
+    background-image: url("/images/bg-pattern.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100vw 50vh;
+    padding: 4rem 1rem 2rem 1rem;
+}
+
+.sr-only{
+    position: absolute;
+    left: -99999rem;
+    opacity: 0;
+}
+
+.hide-for-mobile{
+    @media screen and (max-width: 800px){
+        display: none;
+    }
+}
+
+ul{
+    list-style: none;
+}

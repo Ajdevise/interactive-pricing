@@ -1,0 +1,54 @@
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-weight: 600;
+    margin-top: 2rem; 
+
+    &__toggle{
+        display: inline-block;
+        height: 1.5rem;
+        width: 3rem;
+        margin: 0rem .5rem;
+        background-color: $lighter-grayish-blue;
+        border-radius: 150rem;
+        position: relative;
+        padding: .3rem;
+        cursor: pointer; 
+
+        &.active::before{
+            transform: translateX(146%);
+        }
+
+        &::before{
+            content: "";
+            display: block; 
+            height: 100%;
+            width: 40%;
+            background-color: white;
+            border-radius: 50%;
+            transition: all .2s;
+        }
+    }
+
+    &__discount{
+        color: $light-red;
+        background-color: $light-grayish-red;
+        padding: .2rem .5rem;
+        border-radius: 15px;
+        font-size: .8rem;
+        margin-left: .2rem;
+        transform: translateY(1px);
+        @media screen and (min-width: 800px){
+            font-size: 1rem;
+        }
+    }
+
+    label{
+        color: $grayish-blue;
+        font-size: .85rem;
+        @media screen and (min-width: 800px){
+            font-size: 1rem;
+        }
+    }
+}
