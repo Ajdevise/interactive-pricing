@@ -28,7 +28,7 @@ body{
 }
 
 .hide-for-mobile{
-    @media screen and (max-width: 1120px){
+    @media screen and (max-width: 800px){
         display: none;
     }
 }

@@ -39,11 +39,16 @@
         font-size: .8rem;
         margin-left: .2rem;
         transform: translateY(1px);
-
+        @media screen and (min-width: 800px){
+            font-size: 1rem;
+        }
     }
 
     label{
         color: $grayish-blue;
         font-size: .85rem;
+        @media screen and (min-width: 800px){
+            font-size: 1rem;
+        }
     }
 }
