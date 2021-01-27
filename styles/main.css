@@ -162,12 +162,12 @@ p {
           box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.08);
   margin: 2.5rem auto 0 auto;
   width: 100%;
+  max-width: 35rem;
 }
 
 @media screen and (min-width: 800px) {
   .pricing {
     padding: 2.5rem 2rem;
-    max-width: 35rem;
   }
 }
 
@@ -223,7 +223,7 @@ p {
     grid-column: 2 / 3;
     -ms-grid-column-align: end;
         justify-self: end;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
@@ -311,6 +311,10 @@ p {
         -ms-grid-row-align: start;
         align-self: start;
   }
+}
+
+.range {
+  width: 100%;
 }
 
 .fakeRange {
