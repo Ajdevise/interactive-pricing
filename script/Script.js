@@ -1,6 +1,6 @@
 const monthlyRadio = document.querySelector("#monthly");
 const yearlyRadio = document.querySelector("#yearly");
-const priceToggleComponent = document.querySelector(".slider");
+const priceToggleComponent = document.querySelector(".slider__toggle");
 
 const addActiveClassToPriceToggleComponent = () => {
   priceToggleComponent.classList.add("active");

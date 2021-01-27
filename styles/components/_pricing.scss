@@ -2,17 +2,60 @@
     background-color: white;
     border-radius: 15px;
     text-align: center;
-    padding: 2.5rem 1.5rem;
+    padding: 2.5rem 1rem;
     margin-top: 2.5rem;
+    box-shadow: 1px 1px 15px 1px rgba(#000, .08);
 
-    &__form{
+    // &__form{
 
-    }
+    // }
 
     &__views{
         text-transform: uppercase;
         color: $grayish-blue;
         font-weight: 600;
         letter-spacing: 2px;
+    }
+
+    &__amount{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        color: $dark-desaturated-blue;
+
+        span:last-child{
+            font-size: 1rem;
+            color: $grayish-blue;
+            font-weight: 600;
+            margin-left: .6rem;
+            transform: translateY(2px);
+        }
+    }
+
+    hr{
+        margin: 2rem 0;
+        margin-left: -1rem;
+        margin-right: -1rem;
+        color: rgba($grayish-blue, .15);
+    }
+
+    &__benefits{
+
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $grayish-blue;
+            margin: .5rem 0;
+
+            img{
+                margin-right: .5rem;
+            }
+        }
+    }
+
+    button{
+        margin-top: 2rem;
     }
 }

@@ -1,0 +1,44 @@
+.fakeRange{
+    width: 100%;
+    height: .55rem;
+    border-radius: 150rem;
+    margin: 2.5rem 0; 
+    position: relative;
+    background-color: $light-grayish-blue;
+
+    span{
+        display: block;
+    }
+
+    &__fill{
+        width: 55%;
+        height: 100%; 
+        background-color: $soft-cyan;
+        border-radius: inherit;
+    }
+
+    &__thumb{
+        height: 3rem;
+        width: 3rem;
+        background-color: $strong-cyan;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background-image: url("../../images/icon-slider.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 60%; 
+        box-shadow: 0 9px 16px 6px rgba($strong-cyan, .35);
+        cursor: pointer;
+
+        &:hover{
+            background-color: lighten($strong-cyan, 5%);
+        }
+
+        &:active{
+            background-color: lighten($strong-cyan, 15%);
+        }
+    }
+}

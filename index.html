@@ -25,17 +25,22 @@
         <strong class="pricing__views"><span id="views">100</span>k pageviews</strong>
         <div class="pricing__group">
           <label for="pageViews" class="sr-only">Configure page views</label>
-          <input type="range" min="25" max="200" step="25" value="100" id="pageViews" name="pageViews" class="range">
+          <div class="fakeRange" aria-hidden="true">
+            <span class="fakeRange__fill"></span>
+            <span class="fakeRange__thumb"></span>
+          </div>
+          <input type="range" min="25" max="200" step="25" value="100" id="pageViews" name="pageViews" class="range sr-only">
         </div>
-        <strong>$<span id="money">16.00</span>/<span id="billing-type">month</span></strong>
-        <div class="pricing__toggle">
+        <strong class="pricing__amount">$<span id="money">16.00</span> <span id="billing-type">/ month</span></strong>
+        <div class="slider">
           <label for="monthly">Monthly Billing</label>
-          <input id="monthly" type="radio" value="monthly billing" name="billing-variant" class="" checked><!-- Add sr-only class to visually remove the radio button -->
-          <div class="toggle" aria-hidden="true"></div>
-          <input id="yearly" type="radio" value="yearly billing" name="billing-variant" class=""><!-- Add sr-only class to visually remove the radio button -->
+          <input id="monthly" type="radio" value="monthly billing" name="billing-variant" class="sr-only" checked>
+          <div class="slider__toggle" aria-hidden="true"></div>
+          <input id="yearly" type="radio" value="yearly billing" name="billing-variant" class="sr-only">
           <label for="yearly">Yearly Billing</label>
-          <hr>
+          <div class="slider__discount">-25% <span class="hide-for-mobile">discount</span></div>
         </div>
+        <hr>
         <ul class="pricing__benefits">
           <li>
             <img src="/images/icon-check.svg" alt="icon checked">
@@ -53,5 +58,7 @@
         <button class="cta">Start my trial</button>
       </form>
     </section>
+
+    <script src="/script/Script.js"></script>
 </body>
 </html>
