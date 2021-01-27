@@ -62,5 +62,5 @@ range.addEventListener("input", () => {
 });
 
 thumb.addEventListener("touchstart", thumbClicked);
-body.addEventListener("touchcancel", thumbReleased);
+body.addEventListener("touchend", thumbReleased);
 body.addEventListener("touchmove", (e) => moveThumb({x: e.touches[0].pageX}));
