@@ -1,0 +1,25 @@
+@keyframes insideToRight{
+    0%{
+        transform: translateX(0);
+    }25%{
+        transform: translateX(4px);
+    }50%{
+        transform: scaleY(1.2) translateX(4px);
+        transform-origin: center center;
+    }100%{
+        transform: scaleY(1.2) translateX(4px);
+    }
+}
+
+@keyframes insideToLeft{
+    0%{
+        transform: translateX(0);
+    }25%{
+        transform: translateX(-4px);
+    }50%{
+        transform: scaleY(1.2) translateX(-4px);
+        transform-origin: center center;
+    }100%{
+        transform: scaleY(1.2) translateX(-4px);
+    }
+}
