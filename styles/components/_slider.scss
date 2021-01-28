@@ -5,6 +5,8 @@
     font-weight: 600;
     margin-top: 2rem; 
 
+    
+
     &__toggle{
         display: inline-block;
         height: 1.5rem;
@@ -15,6 +17,11 @@
         position: relative;
         padding: .3rem;
         cursor: pointer; 
+        transition: all .2s;
+
+        &:hover{
+            background-color: $strong-cyan;
+        }
 
         &.active::before{
             transform: translateX(146%);

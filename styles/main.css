@@ -82,6 +82,44 @@
   }
 }
 
+@-webkit-keyframes leftToRight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  75% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  75% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -388,6 +426,12 @@ p {
   position: relative;
   padding: .3rem;
   cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.slider__toggle:hover {
+  background-color: #10d5c2;
 }
 
 .slider__toggle.active::before {
@@ -482,5 +526,10 @@ p {
 .cta:hover::after {
   -webkit-animation: 1s ease-in-out .2s forwards insideToRight;
           animation: 1s ease-in-out .2s forwards insideToRight;
+}
+
+.cta:hover {
+  -webkit-animation: 1s linear forwards leftToRight;
+          animation: 1s linear forwards leftToRight;
 }
 /*# sourceMappingURL=main.css.map */

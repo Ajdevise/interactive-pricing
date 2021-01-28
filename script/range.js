@@ -22,7 +22,6 @@ let updateRange = (percentage) => {
     thumb.style.left = percentage * 100 + "%";
 }
 let updatePrice = (percentage) => {
-    console.log(percentage);
     if(isYearly()) priceSpan.textContent = (percentage * 100 * 2 * 10).toFixed(2);
     else priceSpan.textContent = (percentage * 100 * 2).toFixed(2);
 }
@@ -62,5 +61,5 @@ range.addEventListener("input", () => {
 });
 
 thumb.addEventListener("touchstart", thumbClicked);
-body.addEventListener("touchcancel", thumbReleased);
+body.addEventListener("touchend", thumbReleased);
 body.addEventListener("touchmove", (e) => moveThumb({x: e.touches[0].pageX}));

@@ -45,4 +45,8 @@
     &:hover::after{
         animation: 1s ease-in-out .2s forwards insideToRight;
     }
+
+    &:hover{
+        animation: 1s linear forwards leftToRight;
+    }
 }
