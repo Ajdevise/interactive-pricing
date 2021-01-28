@@ -82,6 +82,44 @@
   }
 }
 
+@-webkit-keyframes leftToRight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  75% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  25% {
+    -webkit-transform: translateX(-2px);
+            transform: translateX(-2px);
+  }
+  50% {
+    -webkit-transform: translateX(2px);
+            transform: translateX(2px);
+  }
+  75% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
 *,
 *::after,
 *::before {
@@ -112,7 +150,7 @@ body {
   opacity: 0;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 520px) {
   .hide-for-mobile {
     display: none;
   }
@@ -165,13 +203,13 @@ p {
   max-width: 35rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 520px) {
   .pricing {
     padding: 2.5rem 2rem;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 520px) {
   .pricing__form {
     display: -ms-grid;
     display: grid;
@@ -192,7 +230,7 @@ p {
   letter-spacing: 2px;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 520px) {
   .pricing__views {
     -ms-grid-column-align: start;
         justify-self: start;
@@ -213,7 +251,7 @@ p {
   color: #293356;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 520px) {
   .pricing__amount {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
@@ -243,7 +281,7 @@ p {
   color: rgba(133, 143, 173, 0.15);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 520px) {
   .pricing hr {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -267,7 +305,7 @@ p {
   margin: .5rem 0;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 520px) {
   .pricing__benefits li {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -279,7 +317,7 @@ p {
   margin-right: .5rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 520px) {
   .pricing__group {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -287,7 +325,7 @@ p {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 520px) {
   .pricing .slider {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
@@ -300,7 +338,7 @@ p {
   margin-top: 2rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 520px) {
   .pricing button {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -388,6 +426,12 @@ p {
   position: relative;
   padding: .3rem;
   cursor: pointer;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.slider__toggle:hover {
+  background-color: #10d5c2;
 }
 
 .slider__toggle.active::before {
@@ -417,7 +461,7 @@ p {
           transform: translateY(1px);
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 520px) {
   .slider__discount {
     font-size: 1rem;
   }
@@ -428,7 +472,7 @@ p {
   font-size: .85rem;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 520px) {
   .slider label {
     font-size: 1rem;
   }
@@ -482,5 +526,10 @@ p {
 .cta:hover::after {
   -webkit-animation: 1s ease-in-out .2s forwards insideToRight;
           animation: 1s ease-in-out .2s forwards insideToRight;
+}
+
+.cta:hover {
+  -webkit-animation: 1s linear forwards leftToRight;
+          animation: 1s linear forwards leftToRight;
 }
 /*# sourceMappingURL=main.css.map */
